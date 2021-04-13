@@ -1,5 +1,5 @@
 import './App.css';
-import Dictionary from "./Dictionary";
+import SearchEngine from "./SearchEngine";
 import Footer from "./Footer.js";
 import Header from "./Header.js";
 
@@ -10,7 +10,7 @@ function App() {
       <header className="App-header">
         <Header />
       </header>
-      <Dictionary />
+      <SearchEngine />
       </div>
       <footer className="text-center">
         <Footer />
