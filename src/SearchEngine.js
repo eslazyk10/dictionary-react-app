@@ -6,10 +6,10 @@ import "./SearchEngine.css";
 
 export default function Dictionary(){
     let [keyword, setKeyword]= useState("");
+    let [results, setResults]= useState(null);
     
     function search(event){
         event.preventDefault();
-        alert(`Searching for ${keyword}`);
     }
 
     function handleKeywordChange(event){
@@ -17,14 +17,13 @@ export default function Dictionary(){
     }
 
     function handleResponse(response){
-        console.log(response.data[0]);
-        console.log(response.data[0].meanings[0].definitions[0].definition);
+        setResults(response.data[0]);
     }
 
     // documentation: https://dictionaryapi.dev/e
-    let apiUrl=`https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`
+    let apiUrl=`https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
 
-    axios.get(apiUrl).then(handleResponse)
+    axios.get(apiUrl).then(handleResponse);
     
     return(
     <div className="Dictionary">
@@ -32,7 +31,7 @@ export default function Dictionary(){
             <input type="search" autoFocus={true} onChange={handleKeywordChange}/>
             <input type="submit" value="Search" className="submit-btn" />
         </form>
-        <Results />
+        <Results results={results}/>
     </div>
     );
 }
