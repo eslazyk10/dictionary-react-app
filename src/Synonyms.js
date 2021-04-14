@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./Synonyms.css";
+
 
 export default function Synonyms(props){
     console.log(props.synonyms)
@@ -8,6 +8,7 @@ export default function Synonyms(props){
         return(
         <div className="Synonyms">
             <strong>Synonyms:</strong>{" "}
+            <div className="synonymList">
             {props.synonyms.map(function(synonym, index){
                 return(
                     <span key={index}>
@@ -15,6 +16,7 @@ export default function Synonyms(props){
                     </span>
                 )
             })}
+            </div>
         </div>
     );
     } else{
