@@ -32,10 +32,3 @@ header{
     margin-left: 50px;
 }
 
-.synonymList{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    text-transform: capitalize;
-    margin-top: 5px;
-}
