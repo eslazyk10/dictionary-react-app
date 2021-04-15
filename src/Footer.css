@@ -12,3 +12,8 @@ a{
 a:hover{
     text-decoration: underline;
 }
+
+a:visited{
+    color: white;
+    text-decoration: none;
+}
