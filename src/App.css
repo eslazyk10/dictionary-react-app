@@ -1,39 +1,36 @@
-.App{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-image: url(/src/images/blackboard-img.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    
+.App {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-image: url(/src/images/splatter-background-4.jpg);
 }
 
-.container{
-    background-color: rgba(255, 255, 255, 0.4);
-    border: 3px solid rgba(255, 255, 255, 0.7);
-    border-radius: 10px;
-    max-width: 900px;
-    
+.container {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 3px solid rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  max-width: 900px;
+  min-height: 100vh;
 }
 
-header{
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    margin-bottom: 30px;
-    margin-top: 15px;
-    color: #E9CE2D;
+header {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 15px;
+  color: #0c6a87;
 }
 
-.Title{
-    text-decoration: underline;
+.Title {
+  text-decoration: underline;
 }
 
-.partOfSpeech{
-    text-transform: capitalize;
-    color: #3b6c74;
+.partOfSpeech {
+  text-transform: capitalize;
+  color: #3b6c74;
 }
 
-.Phonetics{
-    margin-left: 50px;
-    color: #E9CE2D;
+.Phonetics {
+  margin-left: 50px;
+  color: #0c6a87;
 }
-

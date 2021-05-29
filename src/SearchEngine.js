@@ -12,11 +12,12 @@ export default function Dictionary(){
     
     function search(event){
         event.preventDefault();
-        // documentation: https://dictionaryapi.dev/e
+        // documentation: https://dictionaryapi.dev/e data api
         let apiUrl=`https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
 
         axios.get(apiUrl).then(handleDictionaryResponse);
 
+        //pexels APi for images
         let apiKey= "563492ad6f917000010000012f505ff95d9c49fab5152601840fc351";
         let imageApiUrl=`https://api.pexels.com/v1/search?query=${keyword}&per_page=6`;
 

@@ -1,19 +1,19 @@
-.Footer{
-    color: white;
-    margin-top: 10px;
-    padding-bottom: 35px;
+.Footer {
+  color: #161623;
+  margin-top: 10px;
+  padding-bottom: 35px;
 }
 
-a{
-    color: white;
-    text-decoration: none;
+a {
+  color: #161623;
+  text-decoration: none;
 }
 
-a:hover{
-    text-decoration: underline;
+a:hover {
+  text-decoration: underline;
 }
 
-a:visited{
-    color: white;
-    text-decoration: none;
+a:visited {
+  color: #161623;
+  text-decoration: none;
 }
